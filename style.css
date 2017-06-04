@@ -1,0 +1,12 @@
+html,body,#wrapper {
+    height:100%;
+    padding:0;
+    margin:0;
+    position:relative;
+}
+
+.bar {
+    background-color: rgb(241, 166, 161);
+    width: 100%;
+    height: inherit;
+}
