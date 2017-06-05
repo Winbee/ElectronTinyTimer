@@ -2,9 +2,14 @@
   "name": "electron-tiny-timer",
   "version": "1.0.0",
   "description": "A minimal timer build with electron",
+  "author": "Samuel Gagnepain",
+  "license": "MIT",
   "main": "./src/main/js/mainprocess/main.js",
   "scripts": {
-    "start": "electron ."
+    "start": "electron .",
+    "package-mac": "electron-packager . --overwrite --asar=true --platform=darwin --arch=x64 --out=target/release-builds --packageManager=yarn",
+    "package-win": "electron-packager . --overwrite --asar=true --platform=win32 --arch=x64 --out=target/release-builds --packageManager=yarn --version-string.CompanyName=CE --version-string.FileDescription=CE --version-string.ProductName=\"Electron Tutorial App\"",
+    "package-lin": "electron-packager . --overwrite --asar=true --platform=linux --arch=x64 --out=target/release-builds --packageManager=yarn"
   },
   "keywords": [
     "Electron",
@@ -12,13 +17,12 @@
     "pomodoro",
     "bar"
   ],
-  "author": "Samuel Gagnepain",
-  "license": "MIT",
   "devDependencies": {
-    "electron": "~1.6.10"
+    "electron": "^1.6.10",
+    "electron-packager": "^8.7.0"
   },
   "dependencies": {
     "font-awesome": "^4.7.0",
-    "jquery": "~3.2.1"
+    "jquery": "^3.2.1"
   }
 }
