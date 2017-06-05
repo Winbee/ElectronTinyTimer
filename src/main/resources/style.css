@@ -1,12 +1,38 @@
-html,body,#wrapper {
-    height:100%;
-    padding:0;
-    margin:0;
-    position:relative;
+html, body, #wrapper {
+    height: 100%;
+    padding: 0;
+    margin: 0;
 }
 
 .bar {
     background-color: rgb(241, 166, 161);
     width: 100%;
     height: inherit;
+    transition: all 100ms ease-in-out;
+}
+
+.panel {
+    z-index: 1000;
+    position: absolute;
+    top: 50%; /* position the top  edge of the element at the middle of the parent */
+    left: 50%; /* position the left edge of the element at the middle of the parent */
+
+    transform: translate(-50%, -50%);
+}
+
+.button {
+    opacity: 0.1;
+    transition: all 100ms ease-in-out;
+}
+
+.button:hover {
+    opacity: 0.7;
+}
+
+.button:active {
+    transform: scale(0.8);
+}
+
+p {
+    font-size: 30vh;
 }
