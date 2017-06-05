@@ -2,7 +2,7 @@
   "name": "electron-tiny-timer",
   "version": "1.0.0",
   "description": "A minimal timer build with electron",
-  "main": "main.js",
+  "main": "./src/main/js/mainprocess/main.js",
   "scripts": {
     "start": "electron ."
   },
