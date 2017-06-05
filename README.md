@@ -1,4 +1,4 @@
 # Tiny timer
 
-This is a minimal Electron application used to have a timer.
-
+This is a desktop app similar to an egg timer.
+It is built on the Electron framework.
